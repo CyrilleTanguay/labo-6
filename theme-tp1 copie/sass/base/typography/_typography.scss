@@ -1,0 +1,17 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	font-size: 1rem;
+	line-height: $font__line-height-body;
+}
+
+@import "headings";
+@import "copy";
+//Ajout de liens pour les polices
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');

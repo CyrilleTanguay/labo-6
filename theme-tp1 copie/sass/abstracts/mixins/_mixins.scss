@@ -1,0 +1,29 @@
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+//Articles
+@mixin article {
+	margin-left: 2vw;
+	margin-right: 2vw;
+	text-align: left;
+}
+
+@mixin tailleMenu {
+	width: 15vw;
+}
+@mixin mainMenu {
+	display: flex;
+		height: 2rem;
+		justify-content: space-evenly;
+		align-items: center;
+		position: static;
+		width: 100vw;
+}
